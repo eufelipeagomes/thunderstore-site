@@ -141,5 +141,139 @@ nav a {
     object-fit: cover;
     border-radius: 12px;
 
-    box-shadow: 0 10px 30px rgba(247, 110, 18, 0.634);
+    box-shadow: 0 10px 30px rgba(255, 254, 254, 0.916);
+}
+
+/* Faixa de confiança */
+.confianca {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 30px 8%;
+    background-color: #111111;
+
+    text-align: center;
+}
+
+.confianca-item {
+    width: 25%;
+}
+
+.confianca-item h3 {
+    color: #f56a00;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.confianca-item p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Seção de categorias */
+.categorias {
+    padding: 70px 8%;
+    background-color: #ffffff;
+}
+
+
+/* Título da seção */
+.categorias-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.categorias-titulo > p {
+    color: #f56a00;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.categorias-titulo h2 {
+    color: #111111;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.categorias-titulo span {
+    color: #666666;
+    font-size: 16px;
+}
+
+
+/* Grid das categorias */
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Card */
+.categoria-card {
+    background-color: #f5f5f5;
+    padding: 35px 30px;
+
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+}
+
+.categoria-card h3 {
+    font-size: 22px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.categoria-card p {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.categoria-card a {
+    color: #f56a00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Área das imagens das categorias */
+.categoria-imagem {
+    width: 100%;
+    height: 220px;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+
+/* Imagem */
+.categoria-imagem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Degradê na parte inferior da imagem */
+.categoria-imagem::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 45%;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(245, 245, 245, 0),
+        rgba(245, 245, 245, 1)
+    );
 }
