@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -504,14 +508,17 @@ nav a {
     font-weight: bold;
 }
 
-/* FAQ da página inicial */
+/* =========================
+   FAQ
+========================= */
+
 .faq-home {
     padding: 70px 8%;
     background-color: #f5f5f5;
 }
 
 
-/* Título */
+/* Título da FAQ */
 .faq-titulo {
     text-align: center;
     margin-bottom: 40px;
@@ -542,11 +549,13 @@ nav a {
     margin: 0 auto;
 }
 
+
+/* Cada pergunta */
 .faq-item {
     background-color: #ffffff;
 
     border: 1px solid #e5e5e5;
-    border-radius: 8px;
+    border-radius: 10px;
 
     margin-bottom: 12px;
 
@@ -559,24 +568,38 @@ nav a {
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     padding: 20px;
 
     background-color: #ffffff;
     border: none;
 
+    color: #111111;
     font-size: 16px;
     font-weight: bold;
     text-align: left;
 
     cursor: pointer;
+
+    transition: 0.3s;
 }
 
+
+/* Efeito ao passar o mouse */
+.faq-pergunta:hover {
+    background-color: #fafafa;
+}
+
+
+/* Símbolo + */
 .faq-pergunta span {
     color: #f56a00;
     font-size: 24px;
+    font-weight: normal;
+
+    margin-left: 20px;
 }
 
 
@@ -587,21 +610,11 @@ nav a {
     padding: 0 20px 20px;
 }
 
+
+/* Texto da resposta */
 .faq-resposta p {
     color: #666666;
+
+    font-size: 15px;
     line-height: 1.6;
-}
-
-
-/* Link para FAQ completa */
-.faq-link {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.faq-link a {
-    color: #f56a00;
-
-    text-decoration: none;
-    font-weight: bold;
 }
