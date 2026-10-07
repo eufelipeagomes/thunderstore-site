@@ -10,7 +10,7 @@ A Thunder Store é uma loja especializada em produtos Apple e acessórios. Este 
 
 Após a publicação pelo GitHub Pages, o endereço previsto é:
 
-**https://eufelipeagomes.github.io/thunderstore-site/**
+**https://thunderstore-site.vercel.app/**
 
 > Confirme o endereço e o status da publicação nas configurações do GitHub Pages.
 
