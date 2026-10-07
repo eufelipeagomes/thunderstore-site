@@ -751,3 +751,316 @@ nav a {
 .rodape a:hover {
     color: #f56a00;
 }
+
+
+/* =========================
+   MENU RESPONSIVO
+========================= */
+
+/* Esconde o botão no computador */
+.menu-toggle {
+    display: none;
+}
+
+/* Permite posicionar o menu em relação ao cabeçalho */
+header {
+    position: relative;
+}
+
+/* Estilos para telas de até 768px */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #f56a00;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #171717;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    nav.ativo {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav a {
+        color: #ffffff;
+    }
+
+    /* Ajustes do cabeçalho mobile */
+header {
+    padding: 12px 5%;
+    gap: 12px;
+}
+
+.logo img {
+    width: 90px;
+}
+
+header .botao-whatsapp {
+    padding: 10px 12px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.menu-toggle {
+    flex-shrink: 0;
+}
+
+/* =========================
+   HERO MOBILE
+========================= */
+
+.hero {
+    flex-direction: column;
+    padding: 40px 5%;
+    gap: 30px;
+    min-height: auto;
+}
+
+.hero-conteudo {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-destaque {
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.hero-texto {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.hero-botoes {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-video {
+    width: 100%;
+}
+
+.hero-video video {
+    width: 100%;
+    max-width: 420px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* =========================
+   DIFERENCIAIS MOBILE
+========================= */
+
+.diferenciais {
+    padding: 50px 5%;
+}
+
+.diferenciais-titulo h2 {
+    font-size: 28px;
+}
+
+.diferenciais-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.diferencial-card {
+    padding: 25px;
+}
+
+
+/* =========================
+   SOBRE MOBILE
+========================= */
+
+.sobre {
+    padding: 50px 5%;
+}
+
+.sobre-conteudo {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sobre-texto,
+.sobre-numeros {
+    width: 100%;
+}
+
+.sobre-texto h2 {
+    font-size: 28px;
+}
+
+
+/* =========================
+   CLIENTES MOBILE
+========================= */
+
+.clientes-home {
+    padding: 50px 5%;
+}
+
+.clientes-titulo h2 {
+    font-size: 28px;
+}
+
+.clientes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.cliente-foto {
+    height: 260px;
+}
+
+
+/* =========================
+   FAQ MOBILE
+========================= */
+
+.faq-home {
+    padding: 50px 5%;
+}
+
+.faq-titulo h2 {
+    font-size: 28px;
+}
+
+.faq-pergunta {
+    padding: 18px;
+    font-size: 15px;
+}
+
+/* FAIXA DE CONFIANÇA */
+
+.confianca {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px 5%;
+}
+
+.confianca-item {
+    width: 100%;
+}
+
+}
+
+/* Celulares menores */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+    }
+
+    .hero-botoes a {
+        text-align: center;
+    }
+
+    .hero-video video {
+        height: 300px;
+    }
+
+    /* =========================
+   CATEGORIAS - TABLET E MOBILE
+========================= */
+
+.categorias {
+    padding: 50px 5%;
+}
+
+.categorias-titulo h2 {
+    font-size: 28px;
+}
+
+.categorias-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.categoria-card {
+    padding: 20px;
+}
+
+.categoria-imagem {
+    height: 180px;
+}
+
+/* =========================
+   CATEGORIAS - CELULAR
+========================= */
+
+.categorias-grid {
+    grid-template-columns: 1fr;
+}
+
+.categoria-card {
+    padding: 25px;
+}
+
+.categoria-imagem {
+    height: 220px;
+}
+
+.categorias-titulo h2 {
+    font-size: 26px;
+}
+
+/* =========================
+   AJUSTES PARA CELULARES MENORES
+========================= */
+
+.sobre-numeros {
+    grid-template-columns: 1fr;
+}
+
+.sobre-numero {
+    text-align: center;
+}
+
+.cliente-foto {
+    height: 220px;
+}
+
+.faq-pergunta {
+    font-size: 14px;
+    gap: 10px;
+}
+
+.rodape {
+    padding: 25px 5%;
+}
+
+.confianca {
+    grid-template-columns: 1fr;
+}
+
+}

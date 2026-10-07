@@ -37,3 +37,30 @@ perguntas.forEach(function (pergunta) {
     });
 
 });
+
+// Menu mobile
+const botaoMenu = document.querySelector(".menu-toggle");
+const menuPrincipal = document.querySelector("#menu-principal");
+
+botaoMenu.addEventListener("click", function () {
+    const menuAberto = menuPrincipal.classList.toggle("ativo");
+
+    botaoMenu.textContent = menuAberto ? "✕" : "☰";
+    botaoMenu.setAttribute("aria-expanded", String(menuAberto));
+    botaoMenu.setAttribute(
+        "aria-label",
+        menuAberto ? "Fechar menu" : "Abrir menu"
+    );
+});
+
+// Fechar menu ao selecionar uma seção
+const linksMenu = menuPrincipal.querySelectorAll("a");
+
+linksMenu.forEach(function (link) {
+    link.addEventListener("click", function () {
+        menuPrincipal.classList.remove("ativo");
+        botaoMenu.textContent = "☰";
+        botaoMenu.setAttribute("aria-expanded", "false");
+        botaoMenu.setAttribute("aria-label", "Abrir menu");
+    });
+});
